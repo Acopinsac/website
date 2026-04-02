@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant sepia (&:where(.sepia, .sepia *));
+
+@layer base {
+    h1 {
+        font-size: var(--text-4xl);
+        font-weight: var(--font-weight-semibold);
+    }
+    h2 {
+        font-size: var(--text-3xl)
+    }
+    .prose table td {
+        padding: 0.5rem;
+        vertical-align: top;
+    }
+}
