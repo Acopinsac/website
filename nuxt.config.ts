@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   modules: ["nitro-cloudflare-dev"],
   devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2025-05-15",
   studio: {
     i18n: {
       defaultLocale: 'es'
