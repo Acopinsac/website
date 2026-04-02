@@ -1,23 +1,35 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "website",
-  "compatibility_date": "2025-09-27",
-  "observability": {
-    "enabled": true
-  },
-  "main": "./.output/server/index.mjs",
-  "assets": {
-    "binding": "ASSETS",
-    "directory": "./.output/public/"
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "example-db",
-      "database_id": "example-db-id"
-    }
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "website",
+	"compatibility_date": "2025-09-27",
+	"observability": {
+		"enabled": true
+	},
+	"main": "./.output/server/index.mjs",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./.output/public/"
+	},
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "content",
+			"database_id": "3ea935ce-18cc-4787-bbd6-0248e8026b6a"
+		}
+	],
+	"routes": [
+		{
+			"pattern": "acopinsac.gt",
+			"zone_name": "acopinsac.gt",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.acopinsac.gt",
+			"zone_name": "acopinsac.gt",
+			"custom_domain": true
+		}
+	]
 }
