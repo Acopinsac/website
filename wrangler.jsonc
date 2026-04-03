@@ -13,6 +13,9 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
+	"vars": {
+		"NODE_OPTIONS": "--max-old-space-size=8192"
+	},
 	"d1_databases": [
 		{
 			"binding": "DB",
