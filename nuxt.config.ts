@@ -4,16 +4,20 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   modules: [
     "nitro-cloudflare-dev",
+    '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/a11y',
     '@nuxt/eslint',
     '@nuxt/icon',
 //    '@nuxtjs/tailwindcss',
     'nuxt-studio',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
   ],
   devtools: { enabled: true },
   compatibilityDate: "2025-05-15",
+  ui: {
+    content: true
+  },
   studio: {
     i18n: {
       defaultLocale: 'es'

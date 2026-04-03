@@ -1,9 +1,9 @@
 <template>
-  <header class="bg-white dark:bg-gray-900 dark:text-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <header>
+    <nav class="flex items-center justify-between" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <FullLogo />
+          <SiteLogo />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -23,12 +23,7 @@
         </NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <select v-model="$colorMode.preference">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-          <option value="sepia">Sepia</option>
-        </select>
+        
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -36,7 +31,7 @@
       <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <FullLogo />  
+            <SiteLogo />  
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span> 

@@ -11,7 +11,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <div class="container mx-auto px-4 xl:max-w-5xl mx-auto">
+  <div>
     <ContentRenderer
       v-if="page"
       :value="page"

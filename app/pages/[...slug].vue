@@ -12,6 +12,12 @@ if (!page.value) {
 
 <template>
   <div class="container mx-auto px-4 xl:max-w-5xl prose prose-slate lg:prose-xl mx-auto">
+    <UPageHeader
+        v-if="page"
+        :title="page.title"
+        :description="page.description"
+      />
+  
     <ContentRenderer
       v-if="page"
       :value="page"
